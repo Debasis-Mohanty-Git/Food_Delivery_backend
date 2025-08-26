@@ -42,12 +42,13 @@ public class AppConfig {
 			@Override
 			public CorsConfiguration getCorsConfiguration(HttpServletRequest request) {
 				
-			    CorsConfiguration cfg=new CorsConfiguration();
-			    cfg.setAllowedOrigins(Arrays.asList(
-			    		 "http://localhost:3000",
-			             "http://localhost:4200",
-			             "https://tummy-time-food-ordering-web.vercel.app/"
-			    		));
+			    CorsConfiguration cfg = new CorsConfiguration();
+cfg.setAllowedOrigins(Arrays.asList(
+    "http://localhost:3000",
+    "http://localhost:4200",
+    "https://tummy-time-food-ordering-web.vercel.app"
+));
+cfg.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
 				
 			    cfg.setAllowedMethods(Collections.singletonList("*"));
 	            cfg.setAllowCredentials(true);
