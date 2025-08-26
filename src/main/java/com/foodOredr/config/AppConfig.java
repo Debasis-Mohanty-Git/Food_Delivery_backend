@@ -46,7 +46,7 @@ public class AppConfig {
 cfg.setAllowedOrigins(Arrays.asList(
     "http://localhost:3000",
     "http://localhost:4200",
-    "https://tummy-time-food-ordering-web.vercel.app"
+    "https://tummy-time-food-ordering-web.vercel.app/"
 ));
 cfg.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
 				
